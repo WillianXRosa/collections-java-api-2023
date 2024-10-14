@@ -27,4 +27,10 @@ public class Item {
     	this.valor = valor;
     	this.quantidade = quantidade;
     }
+
+	public String toString() {
+		return "Item [nome=" + nome + ", valor=" + valor + ", quantidade=" + quantidade + "]";
+	}
+    
+    
 }
