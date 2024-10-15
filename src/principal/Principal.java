@@ -7,6 +7,7 @@ import operacoesbasicas.CarrinhoDeCompras;
 import operacoesbasicas.CatalogoLivros;
 import operacoesbasicas.ListaTarefa;
 import ordenacao.OrdenacaoPessoa;
+import ordenacao.set.CadastroProdutos;
 
 public class Principal {
 
@@ -145,30 +146,57 @@ public class Principal {
 		/**collections-java-api-2023 - Collectin Framework - Set**/
 		
 		/**Implementacao exercicio agenda contatos**/
-		AgendaContato objAgenda = new AgendaContato();
+		//AgendaContato objAgenda = new AgendaContato();
 		
 		/**Adicionando Contato**/
 		/**Adding Contact**/
-		objAgenda.adicionarContato("Contato 1", 999910015);
+		/*objAgenda.adicionarContato("Contato 1", 999910015);
 		objAgenda.adicionarContato("Contato 2", 999920011);
 		objAgenda.adicionarContato("Contato 3", 999930012);
-		objAgenda.adicionarContato("Contato 4", 999940013);
+		objAgenda.adicionarContato("Contato 4", 999940013);*/
 		
 		
 		/**Exibindo Contato**/
 		/**Displaying Contact**/
-		objAgenda.exibirContato();
+		//objAgenda.exibirContato();
 		
-		/**Pesquesando Contato Por Nome**/
+		/**Pesquisando Contato Por Nome**/
 		/**Searching By Contact Name**/
-		System.out.println(objAgenda.pesquisarPorNomeContato("Contato 4"));
+		//System.out.println(objAgenda.pesquisarPorNomeContato("Contato 4"));
 		
 		/**Atualizando Numero do Contato**/
 		/**Updating Contact Number**/
-		System.out.println("Contato Atualizado: " + objAgenda.atualizarNumeroContato("Contato 1", 999900016));
+		//System.out.println("Contato Atualizado: " + objAgenda.atualizarNumeroContato("Contato 1", 999900016));
 		
 		
 		/*********************************************************************************************/
+		
+		/**collections-java-api-2023 - Collectin Framework - Set**/
+		
+		/**Teste exercicio Cadastro de Produto**/
+		/**Product Registration Exercise Test**/
+		
+		/**Implementation of the Product Registration Class**/
+		CadastroProdutos objCadastroProdutos = new CadastroProdutos();
+		
+		/**Adicionando produtos**/
+		/**Adding Products**/
+		objCadastroProdutos.adicionarProduto(1L, "Produto 5", 12, 3);
+		objCadastroProdutos.adicionarProduto(2L, "Produto 6", 5, 2);
+		objCadastroProdutos.adicionarProduto(3L, "Produto 0", 15, 7);
+		objCadastroProdutos.adicionarProduto(4L, "Produto 9", 20, 10);
+		
+		System.out.println(objCadastroProdutos.setProduto);
+		
+		/**Exibindo produto por nome**/
+		/**Displaying product by name**/
+		System.out.println(objCadastroProdutos.exibirProdutosPorNome());
+		
+		/**Exibindo produto por valor**/
+		/**Displaying product by value**/
+		System.out.println(objCadastroProdutos.exibirProdutosPorValor());
+		
+		
 		
 	}
 
