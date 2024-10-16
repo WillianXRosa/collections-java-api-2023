@@ -1,5 +1,7 @@
 package principal;
 
+import exercicios.map.AgendaContatos;
+import exercicios.map.EstoqueProdutos;
 import exercicioslist.AgendaContato;
 import exercicioslist.ConjuntoConvidado;
 import exercicioslist.Contato;
@@ -177,25 +179,70 @@ public class Principal {
 		/**Product Registration Exercise Test**/
 		
 		/**Implementation of the Product Registration Class**/
-		CadastroProdutos objCadastroProdutos = new CadastroProdutos();
+		//CadastroProdutos objCadastroProdutos = new CadastroProdutos();
 		
 		/**Adicionando produtos**/
 		/**Adding Products**/
-		objCadastroProdutos.adicionarProduto(1L, "Produto 5", 12, 3);
+		/*objCadastroProdutos.adicionarProduto(1L, "Produto 5", 12, 3);
 		objCadastroProdutos.adicionarProduto(2L, "Produto 6", 5, 2);
 		objCadastroProdutos.adicionarProduto(3L, "Produto 0", 15, 7);
-		objCadastroProdutos.adicionarProduto(4L, "Produto 9", 20, 10);
+		objCadastroProdutos.adicionarProduto(4L, "Produto 9", 20, 10);*/
 		
-		System.out.println(objCadastroProdutos.setProduto);
+		//System.out.println(objCadastroProdutos.setProduto);
 		
 		/**Exibindo produto por nome**/
 		/**Displaying product by name**/
-		System.out.println(objCadastroProdutos.exibirProdutosPorNome());
+		//System.out.println(objCadastroProdutos.exibirProdutosPorNome());
 		
 		/**Exibindo produto por valor**/
 		/**Displaying product by value**/
-		System.out.println(objCadastroProdutos.exibirProdutosPorValor());
+		//System.out.println(objCadastroProdutos.exibirProdutosPorValor());
 		
+		
+		/*******************************************************************************************/
+		
+		/**collections-java-api-2023 - Collectin Framework - Map**/
+		
+		/**Implementacao exercicio agenda contatos**/
+		//AgendaContatos objAgenda = new AgendaContatos();
+		
+		/**Adicionando Contato**/
+		/**Adding Contact**/
+		/*objAgenda.adcionarContato("Contato 1", 999910015);
+		objAgenda.adcionarContato("Contato 2", 999920011);
+		objAgenda.adcionarContato("Contato 3", 999930012);
+		objAgenda.adcionarContato("Contato 4", 999940013);
+		
+		objAgenda.removerContato("Contato 3");
+		
+		objAgenda.exibirContato();
+		
+		System.out.println("o numero é: " + objAgenda.pesquisaContatoPorNome("Contato 2"));**/
+		
+		/***************************************************************************************/
+		
+		/**collections-java-api-2023 - Collectin Framework - Map**/
+		
+		/**Implementacao exercicio estoque de produtos**/
+		EstoqueProdutos objEstoque = new EstoqueProdutos();
+		
+		
+		/**Adicionando produtos**/
+		/**Adding Products**/
+		objEstoque.adicionarProduto(1L, "Produto 5", 12d, 3);
+		objEstoque.adicionarProduto(2L, "Produto 6", 5d, 2);
+		objEstoque.adicionarProduto(3L, "Produto 0", 15d, 7);
+		objEstoque.adicionarProduto(4L, "Produto 9", 20d, 10);
+		
+		objEstoque.exibirProdutos();
+		
+		/**Calculando o valor total do estoque**/
+		/**Calculate Total Stock Value**/
+		System.out.println("Valor total do estoque: " + objEstoque.calcularValorTotalEstoque());
+		
+		/**Obter produto mais caro**/
+		/**Get Most Expensive Product**/
+		System.out.println("Valor do produto mais caro: " + objEstoque.obterProdutoMaisCaro());
 		
 		
 	}
