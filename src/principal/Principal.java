@@ -224,25 +224,28 @@ public class Principal {
 		/**collections-java-api-2023 - Collectin Framework - Map**/
 		
 		/**Implementacao exercicio estoque de produtos**/
-		EstoqueProdutos objEstoque = new EstoqueProdutos();
+		//EstoqueProdutos objEstoque = new EstoqueProdutos();
 		
 		
 		/**Adicionando produtos**/
 		/**Adding Products**/
-		objEstoque.adicionarProduto(1L, "Produto 5", 12d, 3);
+		/*objEstoque.adicionarProduto(1L, "Produto 5", 12d, 3);
 		objEstoque.adicionarProduto(2L, "Produto 6", 5d, 2);
 		objEstoque.adicionarProduto(3L, "Produto 0", 15d, 7);
 		objEstoque.adicionarProduto(4L, "Produto 9", 20d, 10);
 		
-		objEstoque.exibirProdutos();
+		objEstoque.exibirProdutos();*/
 		
 		/**Calculando o valor total do estoque**/
 		/**Calculate Total Stock Value**/
-		System.out.println("Valor total do estoque: " + objEstoque.calcularValorTotalEstoque());
+		//System.out.println("Valor total do estoque: " + objEstoque.calcularValorTotalEstoque());
 		
 		/**Obter produto mais caro**/
 		/**Get Most Expensive Product**/
-		System.out.println("Valor do produto mais caro: " + objEstoque.obterProdutoMaisCaro());
+		//System.out.println("Valor do produto mais caro: " + objEstoque.obterProdutoMaisCaro());
+		
+		
+		/**************************************************************************************/
 		
 		
 	}
